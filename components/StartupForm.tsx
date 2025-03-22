@@ -9,7 +9,7 @@ import { formSchema } from "@/lib/validation";
 import { z } from "zod";
 import {toast} from 'sonner';
 import { createPitch } from "@/lib/actions";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const StartupForm = () => {
 
@@ -37,7 +37,7 @@ const StartupForm = () => {
 
             if (result.status == 'SUCCESS') {
                 toast("Success", { description: "Your startup pitch has been created successfully" })
-                router.push(`/startup/${result.id}`)
+                router.push(`/startup/${result._id}`)
             }
 
             return result;
