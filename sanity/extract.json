@@ -663,7 +663,7 @@
     }
   },
   {
-    "name": "Playlist",
+    "name": "playlist",
     "type": "document",
     "attributes": {
       "_id": {
@@ -676,7 +676,7 @@
         "type": "objectAttribute",
         "value": {
           "type": "string",
-          "value": "Playlist"
+          "value": "playlist"
         }
       },
       "_createdAt": {

@@ -127,7 +127,7 @@ export type SanityAssetSourceData = {
 
 export type Playlist = {
   _id: string;
-  _type: "Playlist";
+  _type: "playlist";
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
